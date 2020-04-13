@@ -14,10 +14,16 @@ class PlayState extends FlxState
 		myMsg.setFormat("assets/font.ttf", 50, FlxColor.RED, CENTER);
 		myMsg.setBorderStyle(OUTLINE, FlxColor.BLUE, 1);
 		add(myMsg);
+
+		var player:Hero = new Hero();
+
+		add(player);
+
 	}
 
 	override public function update(elapsed:Float)
 	{
 		super.update(elapsed);
+		
 	}
 }
